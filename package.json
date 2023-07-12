@@ -1,0 +1,28 @@
+{
+  "name": "hoverone",
+  "productName": "HoverOne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "build": {
+    "appId": "15154HoverStudios.HoverOne",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0"
+  }
+}
