@@ -2,14 +2,20 @@
   "name": "hoverone",
   "productName": "HoverOne",
   "version": "1.0.0",
-  "description": "",
+  "description": "The portal to EVERYTHING Hover Studios",
   "main": "index.js",
   "keywords": [],
   "build": {
     "appId": "15154HoverStudios.HoverOne",
     "win": {
-      "target": "nsis",
+      "target": ["appx", "nsis"],
       "icon": "build/icon.ico"
+    },
+    "appx": {
+      "applicationId": "HoverOne",
+      "identityName": "15154HoverStudios.HoverOne",
+      "publisher": "CN=4CF661FC-0F98-4671-89DA-336E2D71C848",
+      "publisherDisplayName": "Hover Studios"
     }
   },
   "scripts": {
