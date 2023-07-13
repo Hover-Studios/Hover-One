@@ -1,7 +1,7 @@
 const {app, BrowserWindow, screen} = require('electron');
 const serve = require('electron-serve');
 
-const loadURL = serve({directory: 'renderer'});
+const loadURL = serve({directory: 'docs'});
 
 let mainWindow;
 
